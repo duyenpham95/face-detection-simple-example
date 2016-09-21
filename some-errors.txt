@@ -1,0 +1,8 @@
+-Error no.1 : opencv version 3.0 cause errors "cant find opencv_java300" that's why i use 2.4.9 ( 2.4.8 's ok as well )
+-Error no.2 : 
+	libpng warning: Image width is zero in IHDR
+	libpng warning: Image height is zero in IHDR
+	libpng error: Invalid IHDR data
+
+	because the paths in the reference tutorial were not right . It had a redundant splash at the beginning (/D:/..)
+	Fix : FaceDetector.class.getResource("lbpcascade_frontalface.xml").getPath().substring(1)
