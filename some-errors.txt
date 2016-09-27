@@ -6,3 +6,5 @@
 
 	because the paths in the reference tutorial were not right . It had a redundant splash at the beginning (/D:/..)
 	Fix : FaceDetector.class.getResource("lbpcascade_frontalface.xml").getPath().substring(1)
+	
+	Notice that this only work in netbean . In eclipse i could not use this right I put the xml file in the root dir and use this line of code : CascadeClassifier faceDetector = new CascadeClassifier("./haarcascade_frontalface_alt.xml"); Because the difference between the file structure of Netbean and Eclipse . In Eclipse if you get the url of the current class, your url will contain "bin/" while in netbean your classes are in src dir . 
